@@ -36,7 +36,7 @@ pipeline {
                 sh "echo this is deploy"
             }
         }
-    }
+    
         stage('print params'){
             steps {
                 echo "Hello ${params.PERSON}"
@@ -50,7 +50,7 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
             }
         }
-
+    }
     post {
         always{
             echo "this section run always"
